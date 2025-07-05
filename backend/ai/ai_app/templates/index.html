@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Transcript Summarizer</title>
+</head>
+<body>
+    <h1>YouTube Transcript Summarizer</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="url">Enter YouTube Video URL:</label><br>
+        <input type="text" id="url" name="url" size="60" required>
+        <button type="submit">Generate</button>
+    </form>
+
+    {% if summary %}
+        <h2>Summary</h2>
+        <pre>{{ summary }}</pre>
+    {% endif %}
+
+    {% if flashcards %}
+        <h2>Flashcards</h2>
+        <pre>{{ flashcards }}</pre>
+    {% endif %}
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

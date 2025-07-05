@@ -1,0 +1,781 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "YouTubeTranscriptApi",
+        "importPath": "youtube_transcript_api",
+        "description": "youtube_transcript_api",
+        "isExtraImport": true,
+        "detail": "youtube_transcript_api",
+        "documentation": {}
+    },
+    {
+        "label": "YouTubeTranscriptApi",
+        "importPath": "youtube_transcript_api",
+        "description": "youtube_transcript_api",
+        "isExtraImport": true,
+        "detail": "youtube_transcript_api",
+        "documentation": {}
+    },
+    {
+        "label": "AutoTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoModelForCausalLM",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoModelForCausalLM",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "pipeline",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "ensure_csrf_cookie",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "backend.ai.ai.asgi",
+        "description": "backend.ai.ai.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "backend.ai.ai.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-p9b2sc=5h@(e@@dbq7m+^q^*q*@t(5jshdc9ng!6td2+g2r1^='\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-p9b2sc=5h@(e@@dbq7m+^q^*q*@t(5jshdc9ng!6td2+g2r1^='\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    \"ai_app\",",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    \"ai_app\",\n    'corsheaders'  \n]",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CSRF_TRUSTED_ORIGINS",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "CSRF_TRUSTED_ORIGINS = [\n    \"http://localhost:3000\",\n]\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'corsheaders.middleware.CorsMiddleware'\n]",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\",  # Next.js/React frontend origin\n]\nCSRF_TRUSTED_ORIGINS = [\n    \"http://localhost:3000\",  # this too!\n]\nCORS_ALLOW_CREDENTIALS = True  # Required when using withCredentials: true\nROOT_URLCONF = 'ai.urls'\nTEMPLATES = [\n    {",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CSRF_TRUSTED_ORIGINS",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "CSRF_TRUSTED_ORIGINS = [\n    \"http://localhost:3000\",  # this too!\n]\nCORS_ALLOW_CREDENTIALS = True  # Required when using withCredentials: true\nROOT_URLCONF = 'ai.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_CREDENTIALS",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True  # Required when using withCredentials: true\nROOT_URLCONF = 'ai.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "ROOT_URLCONF = 'ai.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'ai.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "backend.ai.ai.settings",
+        "description": "backend.ai.ai.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.ai.ai.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend.ai.ai.urls",
+        "description": "backend.ai.ai.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('ai_app.urls'))\n]",
+        "detail": "backend.ai.ai.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "backend.ai.ai.wsgi",
+        "description": "backend.ai.ai.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "backend.ai.ai.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "AiAppConfig",
+        "kind": 6,
+        "importPath": "backend.ai.ai_app.apps",
+        "description": "backend.ai.ai_app.apps",
+        "peekOfCode": "class AiAppConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'ai_app'",
+        "detail": "backend.ai.ai_app.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend.ai.ai_app.urls",
+        "description": "backend.ai.ai_app.urls",
+        "peekOfCode": "urlpatterns = [\n    path('api/summary/', generate_summary),\n    path('api/get-csrf/', get_csrf_token),\n    path('api/flashcards/', flashcards),\n]",
+        "detail": "backend.ai.ai_app.urls",
+        "documentation": {}
+    },
+    {
+        "label": "generate_ai_response",
+        "kind": 2,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "def generate_ai_response(conversation):\n    prompt = tokenizer.apply_chat_template(conversation, tokenize=False)\n    inputs = tokenizer(prompt, return_tensors=\"pt\").to(device)\n    with torch.no_grad():\n        output = model.generate(\n            **inputs,\n            do_sample=True,\n            max_new_tokens=1500,\n        )\n    return tokenizer.decode(output[0][len(inputs.input_ids[0]):], skip_special_tokens=True).lstrip(\"assistant:\").strip()",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_csrf_token",
+        "kind": 2,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "def get_csrf_token(request):\n    return JsonResponse({'message': 'CSRF cookie set'})\ndef flashcards(request):\n    if request.method != \"POST\":\n        return JsonResponse({\"data\": \"Invalid request method. Please use POST.\"})\n    print(\"Generating flashcards...\")\n    try:\n        body = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({\"data\": \"Invalid JSON.\"})",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "flashcards",
+        "kind": 2,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "def flashcards(request):\n    if request.method != \"POST\":\n        return JsonResponse({\"data\": \"Invalid request method. Please use POST.\"})\n    print(\"Generating flashcards...\")\n    try:\n        body = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({\"data\": \"Invalid JSON.\"})\n    url = body.get(\"url\", \"\").strip()\n    print(url)",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "generate_summary",
+        "kind": 2,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "def generate_summary(request):\n    if request.method != \"POST\":\n        return JsonResponse({\"data\": \"Invalid request method. Please use POST.\"})\n    print(\"Generating summary...\")\n    try:\n        body = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({\"data\": \"Invalid JSON.\"})\n    url = body.get(\"url\", \"\").strip()\n    print(url)",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel_name = \"meta-llama/Llama-3.2-1B-Instruct\"  # Replace with your model\ntokenizer = AutoTokenizer.from_pretrained(model_name, use_safetensors=True)\ntokenizer.pad_token_id = tokenizer.eos_token_id\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,\n    device_map=device,\n)",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "model_name",
+        "kind": 5,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "model_name = \"meta-llama/Llama-3.2-1B-Instruct\"  # Replace with your model\ntokenizer = AutoTokenizer.from_pretrained(model_name, use_safetensors=True)\ntokenizer.pad_token_id = tokenizer.eos_token_id\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,\n    device_map=device,\n)\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "tokenizer = AutoTokenizer.from_pretrained(model_name, use_safetensors=True)\ntokenizer.pad_token_id = tokenizer.eos_token_id\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,\n    device_map=device,\n)\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Using device:\", device)",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer.pad_token_id",
+        "kind": 5,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "tokenizer.pad_token_id = tokenizer.eos_token_id\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,\n    device_map=device,\n)\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Using device:\", device)\ndef generate_ai_response(conversation):",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "model = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,\n    device_map=device,\n)\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Using device:\", device)\ndef generate_ai_response(conversation):\n    prompt = tokenizer.apply_chat_template(conversation, tokenize=False)",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Using device:\", device)\ndef generate_ai_response(conversation):\n    prompt = tokenizer.apply_chat_template(conversation, tokenize=False)\n    inputs = tokenizer(prompt, return_tensors=\"pt\").to(device)\n    with torch.no_grad():\n        output = model.generate(\n            **inputs,\n            do_sample=True,\n            max_new_tokens=1500,",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "backend.ai.manage",
+        "description": "backend.ai.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ai.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "backend.ai.manage",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "url = input(\"Enter YouTube video link: \").strip()\npattern = r\"(?:v=|\\/)([0-9A-Za-z_-]{11})\"\nmatch = re.search(pattern, url)\nif not match:\n    print(\"Invalid YouTube video ID format.\")\n    exit(1)\nvideo_id = match.group(1)\ntranscript = YouTubeTranscriptApi().fetch(video_id)\ninput_text = \" \".join([entry.text for entry in transcript])\nprint(\"Transcript fetched successfully.\")",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "pattern",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "pattern = r\"(?:v=|\\/)([0-9A-Za-z_-]{11})\"\nmatch = re.search(pattern, url)\nif not match:\n    print(\"Invalid YouTube video ID format.\")\n    exit(1)\nvideo_id = match.group(1)\ntranscript = YouTubeTranscriptApi().fetch(video_id)\ninput_text = \" \".join([entry.text for entry in transcript])\nprint(\"Transcript fetched successfully.\")\nwith open(\"transcript.txt\", \"w\", encoding=\"utf-8\") as f:",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "match",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "match = re.search(pattern, url)\nif not match:\n    print(\"Invalid YouTube video ID format.\")\n    exit(1)\nvideo_id = match.group(1)\ntranscript = YouTubeTranscriptApi().fetch(video_id)\ninput_text = \" \".join([entry.text for entry in transcript])\nprint(\"Transcript fetched successfully.\")\nwith open(\"transcript.txt\", \"w\", encoding=\"utf-8\") as f:\n    json.dump(transcript.to_raw_data(), f, indent=2)",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "video_id",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "video_id = match.group(1)\ntranscript = YouTubeTranscriptApi().fetch(video_id)\ninput_text = \" \".join([entry.text for entry in transcript])\nprint(\"Transcript fetched successfully.\")\nwith open(\"transcript.txt\", \"w\", encoding=\"utf-8\") as f:\n    json.dump(transcript.to_raw_data(), f, indent=2)\nwith open(\"text_data.txt\", \"w\") as f:\n    f.write(input_text)\n#Check device\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "transcript",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "transcript = YouTubeTranscriptApi().fetch(video_id)\ninput_text = \" \".join([entry.text for entry in transcript])\nprint(\"Transcript fetched successfully.\")\nwith open(\"transcript.txt\", \"w\", encoding=\"utf-8\") as f:\n    json.dump(transcript.to_raw_data(), f, indent=2)\nwith open(\"text_data.txt\", \"w\") as f:\n    f.write(input_text)\n#Check device\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Using device:\", device)",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "input_text",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "input_text = \" \".join([entry.text for entry in transcript])\nprint(\"Transcript fetched successfully.\")\nwith open(\"transcript.txt\", \"w\", encoding=\"utf-8\") as f:\n    json.dump(transcript.to_raw_data(), f, indent=2)\nwith open(\"text_data.txt\", \"w\") as f:\n    f.write(input_text)\n#Check device\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Using device:\", device)\n# Load Llama 3.2B Instruct model",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Using device:\", device)\n# Load Llama 3.2B Instruct model\nmodel_name = \"meta-llama/Llama-3.2-1B-Instruct\"  # Replace with a valid model checkpoint if needed\ntokenizer = AutoTokenizer.from_pretrained(model_name, use_safetensors=True)\ntokenizer.pad_token_id = tokenizer.eos_token_id\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "model_name",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "model_name = \"meta-llama/Llama-3.2-1B-Instruct\"  # Replace with a valid model checkpoint if needed\ntokenizer = AutoTokenizer.from_pretrained(model_name, use_safetensors=True)\ntokenizer.pad_token_id = tokenizer.eos_token_id\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,\n    device_map=device,\n)\nconversation = [",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "tokenizer = AutoTokenizer.from_pretrained(model_name, use_safetensors=True)\ntokenizer.pad_token_id = tokenizer.eos_token_id\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,\n    device_map=device,\n)\nconversation = [\n    {",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer.pad_token_id",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "tokenizer.pad_token_id = tokenizer.eos_token_id\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,\n    device_map=device,\n)\nconversation = [\n    {\n        \"role\": \"system\",",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "model = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype=torch.float16 if device == \"cuda\" else torch.float32,\n    use_safetensors=True,\n    device_map=device,\n)\nconversation = [\n    {\n        \"role\": \"system\",\n        \"content\": (",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "conversation",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "conversation = [\n    {\n        \"role\": \"system\",\n        \"content\": (\n            \"You are an expert at summarizing video content from transcripts. \"\n            \"Create a clear, detailed, hierarchical summary that captures all main points, sub-points, \"\n            \"and important details or explanations from the video content. \"\n            \"Present the summary as a well-structured outline with numbered or indented points. \"\n            \"For each point and sub-point, include a brief but informative summary paragraph explaining the content, \"\n            \"not just a heading or bullet point. \"",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "prompt",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "prompt = tokenizer.apply_chat_template(conversation, tokenize=False)\ninputs = tokenizer(prompt, return_tensors=\"pt\").to(device)\nwith torch.no_grad():\n    output = model.generate(\n        **inputs,\n        do_sample=True,\n        max_new_tokens=1000\n    )\nprocessed_text = tokenizer.decode(output[0][len(inputs.input_ids[0]):], skip_special_tokens=True)\nprocessed_text = processed_text.lstrip(\"assistant:\").strip()",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "inputs",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "inputs = tokenizer(prompt, return_tensors=\"pt\").to(device)\nwith torch.no_grad():\n    output = model.generate(\n        **inputs,\n        do_sample=True,\n        max_new_tokens=1000\n    )\nprocessed_text = tokenizer.decode(output[0][len(inputs.input_ids[0]):], skip_special_tokens=True)\nprocessed_text = processed_text.lstrip(\"assistant:\").strip()\nprint(\"Text processed successfully.\")",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "processed_text",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "processed_text = tokenizer.decode(output[0][len(inputs.input_ids[0]):], skip_special_tokens=True)\nprocessed_text = processed_text.lstrip(\"assistant:\").strip()\nprint(\"Text processed successfully.\")\nwith open(\"summary.txt\", \"w\") as f:\n    f.write(processed_text)\nconversation_flashcards = [\n    {\n        \"role\": \"system\",\n        \"content\": (\n            \"You are an expert at transforming video transcripts into educational flashcards. \"",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "processed_text",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "processed_text = processed_text.lstrip(\"assistant:\").strip()\nprint(\"Text processed successfully.\")\nwith open(\"summary.txt\", \"w\") as f:\n    f.write(processed_text)\nconversation_flashcards = [\n    {\n        \"role\": \"system\",\n        \"content\": (\n            \"You are an expert at transforming video transcripts into educational flashcards. \"\n            \"From the provided transcript, extract important concepts, facts, or explanations and turn them into clear, concise Q&A flashcards. \"",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "conversation_flashcards",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "conversation_flashcards = [\n    {\n        \"role\": \"system\",\n        \"content\": (\n            \"You are an expert at transforming video transcripts into educational flashcards. \"\n            \"From the provided transcript, extract important concepts, facts, or explanations and turn them into clear, concise Q&A flashcards. \"\n            \"Each flashcard should have a 'Question:' followed by an 'Answer:' format. \"\n            \"Focus on creating meaningful, informative flashcards that cover key points, definitions, explanations, and examples from the content. \"\n            \"Avoid generating summaries or outlines—only flashcards in Q&A form.\"\n        ),",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "prompt_flashcards",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "prompt_flashcards = tokenizer.apply_chat_template(conversation_flashcards, tokenize=False)\ninputs_flashcards = tokenizer(prompt_flashcards, return_tensors=\"pt\").to(device)\nwith torch.no_grad():\n    output_flashcards = model.generate(\n        **inputs_flashcards,\n        do_sample=True,\n        max_new_tokens=1500\n    )\nprocessed_flashcards = tokenizer.decode(\n    output_flashcards[0][len(inputs_flashcards.input_ids[0]):], ",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "inputs_flashcards",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "inputs_flashcards = tokenizer(prompt_flashcards, return_tensors=\"pt\").to(device)\nwith torch.no_grad():\n    output_flashcards = model.generate(\n        **inputs_flashcards,\n        do_sample=True,\n        max_new_tokens=1500\n    )\nprocessed_flashcards = tokenizer.decode(\n    output_flashcards[0][len(inputs_flashcards.input_ids[0]):], \n    skip_special_tokens=True",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "processed_flashcards",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "processed_flashcards = tokenizer.decode(\n    output_flashcards[0][len(inputs_flashcards.input_ids[0]):], \n    skip_special_tokens=True\n)\nprocessed_flashcards = processed_flashcards.lstrip(\"assistant:\").strip()\nwith open(\"flashcards.txt\", \"w\") as f:\n    f.write(processed_flashcards)\nprint(\"Flashcards generated successfully.\")",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "processed_flashcards",
+        "kind": 5,
+        "importPath": "backend.ai",
+        "description": "backend.ai",
+        "peekOfCode": "processed_flashcards = processed_flashcards.lstrip(\"assistant:\").strip()\nwith open(\"flashcards.txt\", \"w\") as f:\n    f.write(processed_flashcards)\nprint(\"Flashcards generated successfully.\")",
+        "detail": "backend.ai",
+        "documentation": {}
+    },
+    {
+        "label": "_Known",
+        "kind": 6,
+        "importPath": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "description": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
+        "detail": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "_String",
+        "kind": 6,
+        "importPath": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "description": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
+        "detail": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "kind": 2,
+        "importPath": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "description": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
+        "detail": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "description": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
+        "detail": "client.youtube-summarizer.node_modules.flatted.python.flatted",
+        "documentation": {}
+    }
+]
