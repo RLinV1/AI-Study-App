@@ -70,19 +70,21 @@ def flashcards(request):
 
     # Prepare conversation for flashcards
     conversation_flashcards = [
-        {
-            "role": "system",
-            "content": (
-                "You are an expert at transforming video transcripts into educational flashcards. "
-                "From the provided transcript, extract important concepts, facts, or explanations and turn them into clear, concise Q&A flashcards. "
-                "Each flashcard MUST begin with 'Question:' (not 'Q:') and be followed by 'Answer:' (not 'A:'). "
-                "Do NOT abbreviate these labels. Stick to this exact format for every flashcard."
-                "Focus on creating meaningful, informative flashcards that cover key points, definitions, explanations, and examples from the content. "
-                "Avoid generating summaries or outlines—only flashcards in Q&A form."
-            ),
-        },
-        {"role": "user", "content": input_text},
+    {
+        "role": "system",
+        "content": (
+            "You are an expert at transforming video transcripts into educational flashcards.\n\n"
+            "From the provided transcript, extract important concepts, facts, or explanations and turn them into clear, concise Q&A flashcards.\n\n"
+            "Each flashcard MUST begin with 'Question:' followed by a single line question, and then 'Answer:' followed by a single line answer.\n"
+            "Do NOT abbreviate these labels (i.e., do not use 'Q:' or 'A:').\n\n"
+            "**Important:** If the transcript already contains text like 'Q:', 'A:', 'Question:', or 'Answer:', REMOVE those prefixes and reformat cleanly.\n\n"
+            "Focus on creating meaningful, informative flashcards that cover key points, definitions, explanations, and examples from the content.\n"
+            "Avoid summaries or outlines. Only produce flashcards in strict Q&A form."
+        ),
+    },
+    {"role": "user", "content": input_text},
     ]
+
 
     processed_flashcards = generate_ai_response(conversation_flashcards)
 
@@ -119,26 +121,26 @@ def generate_summary(request):
     
     # Prepare conversation for summary
     conversation_summary = [
-        {
-            "role": "system",
-            "content": (
-                "You are an expert at analyzing educational video transcripts and transforming them into detailed, hierarchical summaries.\n\n"
-                "Your task is to create a highly structured, easy-to-follow summary that captures the full depth of the video's content. Follow these guidelines carefully:\n\n"
-                "Identify all major topics, subtopics, and key explanations or demonstrations presented in the video.\n"
-                "Organize the content into a numbered outline, using proper hierarchy (main points, subpoints, and nested explanations).\n"
-                "For each point, write a **short heading** followed by a **concise but informative paragraph** that explains what was discussed.\n"
-                "Use full sentences and avoid vague or generic summaries — every point should contain meaningful information from the video.\n"
-                "Do not generate lists of keywords, simple bullet points, or summaries that only describe the structure of the video. Your summary should reflect the **substance** of the content.\n"
-                "Focus only on what is taught or explained in the video — exclude filler like greetings, self-promotion, or off-topic comments.\n"
-                "Aim to be accurate, educational, and complete — imagine the reader did not watch the video but needs to understand everything important from it.\n\n"
-                "Output Format:\n"
-                "- A hierarchical summary with clear numbered structure.\n"
-                "- Each section should be rich in educational content, not just titles."
-            ),
-        },
-        {"role": "user", "content": input_text},
+    {
+        "role": "system",
+        "content": (
+            "You are an expert at analyzing educational video transcripts and transforming them into detailed, hierarchical summaries.\n\n"
+            "Your task is to create a highly structured, easy-to-follow summary that captures the full depth of the video's content. Follow these guidelines carefully:\n\n"
+            "1. Identify all major topics, subtopics, and key explanations or demonstrations presented in the video.\n"
+            "2. Organize the content into a numbered outline, using proper hierarchy (main points, subpoints, and nested explanations).\n"
+            "3. For each point, write a \\*\\*short heading\\*\\* followed by a \\*\\*concise but informative paragraph\\*\\* that explains what was discussed.\n"
+            "4. Use full sentences and avoid vague or generic summaries — every point should contain meaningful information from the video.\n"
+            "5. Do not generate lists of keywords, simple bullet points, or summaries that only describe the structure of the video. Your summary should reflect the \\*\\*substance\\*\\* of the content.\n"
+            "6. Focus only on what is taught or explained in the video — exclude filler like greetings, self-promotion, or off-topic comments.\n"
+            "7. Aim to be accurate, educational, and complete — imagine the reader did not watch the video but needs to understand everything important from it.\n\n"
+            "Output Format:\n"
+            "- A hierarchical summary with clear numbered structure.\n"
+            "- Each section should be rich in educational content, not just titles."
+        ),
+    },
+    {"role": "user", "content": input_text},
     ]
 
     processed_summary = generate_ai_response(conversation_summary)
-    return JsonResponse({"data": processed_summary})
+    return JsonResponse({"data": processed_summary, "transcript": transcript.to_raw_data()})
 
