@@ -174,7 +174,7 @@ export default function Home() {
                 />
               )}
               {transcript && (
-                <div className="p-6  flex flex-col max-h-[50%] overflow-y-scroll">
+                <div className="py-2flex flex-col max-h-[50%] overflow-y-scroll">
                   <div className="text-2xl mb-4">Transcript: </div>
                   {transcript.map(({ duration, start, text }, index) => (
                     <div key={index} className="mb-4">

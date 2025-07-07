@@ -153,7 +153,8 @@ def generate_summary(request):
     ]
 
     processed_summary = generate_ai_response(conversation_summary)
-    save_video_data(video_id, yt.title, processed_summary, quiz=None)
+    transcript_str = json.dumps(transcript.to_raw_data())
+    save_video_data(video_id, yt.title, processed_summary, quiz=None, transcript=transcript_str)
     return JsonResponse({"summary": processed_summary, "transcript": transcript.to_raw_data()})
 
 
@@ -162,10 +163,10 @@ def get_videos(request):
     videos_list = list(videos)
     return JsonResponse({"videos": videos_list})
 
-def save_video_data(video_id, title, summary=None, quiz=None):
+def save_video_data(video_id, title, summary=None, quiz=None, transcript=None):
     video, created = Video.objects.get_or_create(
         video_id=video_id,
-        defaults={"title": title, "summary_text": summary, "quiz_text": quiz}
+        defaults={"title": title, "summary_text": summary, "quiz_text": quiz, "transcript": transcript}
     )
     
     if not created:
@@ -173,13 +174,15 @@ def save_video_data(video_id, title, summary=None, quiz=None):
         if summary is not None:
             video.summary_text = summary
             updated = True
-        if video is not None:
+        if quiz is not None:
             video.quiz_text = quiz
             updated = True
         if title is not None:
             video.title = title
             updated = True
-        
+        if transcript is not None:
+            video.transcript = transcript
+            updated = True
         if updated:
             video.save()
             

@@ -121,6 +121,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -528,6 +544,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.ai.ai_app.migrations.0004_video_transcript",
+        "description": "backend.ai.ai_app.migrations.0004_video_transcript",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('ai_app', '0003_alter_video_title'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='video',\n            name='transcript',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "backend.ai.ai_app.migrations.0004_video_transcript",
+        "documentation": {}
+    },
+    {
         "label": "AiAppConfig",
         "kind": 6,
         "importPath": "backend.ai.ai_app.apps",
@@ -541,7 +566,7 @@
         "kind": 6,
         "importPath": "backend.ai.ai_app.models",
         "description": "backend.ai.ai_app.models",
-        "peekOfCode": "class Video(models.Model):\n    video_id = models.CharField(max_length=100, unique=True)\n    title = models.CharField(max_length=255, blank=True, default=\"\")\n    summary_text = models.TextField(blank=True, null=True)  \n    quiz_text = models.TextField(blank=True, null=True)     \n    created_at = models.DateTimeField(auto_now_add=True)",
+        "peekOfCode": "class Video(models.Model):\n    video_id = models.CharField(max_length=100, unique=True)\n    title = models.CharField(max_length=255, blank=True, default=\"\")\n    summary_text = models.TextField(blank=True, null=True)  \n    quiz_text = models.TextField(blank=True, null=True)    \n    transcript = models.TextField(blank=True, null=True) \n    created_at = models.DateTimeField(auto_now_add=True)",
         "detail": "backend.ai.ai_app.models",
         "documentation": {}
     },
@@ -595,7 +620,7 @@
         "kind": 2,
         "importPath": "backend.ai.ai_app.views",
         "description": "backend.ai.ai_app.views",
-        "peekOfCode": "def get_videos(request):\n    videos = Video.objects.all().values()\n    videos_list = list(videos)\n    return JsonResponse({\"videos\": videos_list})\ndef save_video_data(video_id, title, summary=None, quiz=None):\n    video, created = Video.objects.get_or_create(\n        video_id=video_id,\n        defaults={\"title\": title, \"summary_text\": summary, \"quiz_text\": quiz}\n    )\n    if not created:",
+        "peekOfCode": "def get_videos(request):\n    videos = Video.objects.all().values()\n    videos_list = list(videos)\n    return JsonResponse({\"videos\": videos_list})\ndef save_video_data(video_id, title, summary=None, quiz=None, transcript=None):\n    video, created = Video.objects.get_or_create(\n        video_id=video_id,\n        defaults={\"title\": title, \"summary_text\": summary, \"quiz_text\": quiz, \"transcript\": transcript}\n    )\n    if not created:",
         "detail": "backend.ai.ai_app.views",
         "documentation": {}
     },
@@ -604,7 +629,7 @@
         "kind": 2,
         "importPath": "backend.ai.ai_app.views",
         "description": "backend.ai.ai_app.views",
-        "peekOfCode": "def save_video_data(video_id, title, summary=None, quiz=None):\n    video, created = Video.objects.get_or_create(\n        video_id=video_id,\n        defaults={\"title\": title, \"summary_text\": summary, \"quiz_text\": quiz}\n    )\n    if not created:\n        updated = False\n        if summary is not None:\n            video.summary_text = summary\n            updated = True",
+        "peekOfCode": "def save_video_data(video_id, title, summary=None, quiz=None, transcript=None):\n    video, created = Video.objects.get_or_create(\n        video_id=video_id,\n        defaults={\"title\": title, \"summary_text\": summary, \"quiz_text\": quiz, \"transcript\": transcript}\n    )\n    if not created:\n        updated = False\n        if summary is not None:\n            video.summary_text = summary\n            updated = True",
         "detail": "backend.ai.ai_app.views",
         "documentation": {}
     },

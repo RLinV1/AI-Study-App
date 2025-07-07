@@ -3,6 +3,7 @@
 ## Goals
 1. Create an app that allows you to summarize a youtube video when providing a link
 2. Generate custom flashcards based on a youtube video in the format of Question and Answer
+3. See other users generated summaries and quizzes
 
 ## Tech Stack
 Next.js, Django, Llama 3
