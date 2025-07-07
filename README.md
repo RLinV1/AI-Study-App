@@ -21,10 +21,10 @@ Next.js, Django, Llama 3
 
 ## Images
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6b5135a1-7fa2-43a1-b484-b242ea166d73" width="500" />
-  <img src="https://github.com/user-attachments/assets/eaa34ca0-5afe-4c8c-8078-b403bde11378" width="500" />
+  <img src="https://github.com/user-attachments/assets/6b5135a1-7fa2-43a1-b484-b242ea166d73" width="400" />
+  <img src="https://github.com/user-attachments/assets/eaa34ca0-5afe-4c8c-8078-b403bde11378" width="400" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/67fa59f6-c18b-4de1-b125-d9f522dd3e0b" width="500" />
-  <img src="https://github.com/user-attachments/assets/c72539eb-0df1-44d6-82e6-a4d68ebd18aa" width="500" />
+  <img src="https://github.com/user-attachments/assets/67fa59f6-c18b-4de1-b125-d9f522dd3e0b" width="400" />
+  <img src="https://github.com/user-attachments/assets/c72539eb-0df1-44d6-82e6-a4d68ebd18aa" width="400" />
 </p>
