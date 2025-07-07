@@ -1,6 +1,8 @@
 import json
 from django.http import JsonResponse
 from django.shortcuts import render
+from ai_app.models import Video
+from pytubefix import YouTube
 
 # Create your views here.
 import re
@@ -41,11 +43,11 @@ def generate_ai_response(conversation):
 def get_csrf_token(request):
     return JsonResponse({'message': 'CSRF cookie set'})
 
-def flashcards(request):
+def quiz(request):
     if request.method != "POST":
         return JsonResponse({"data": "Invalid request method. Please use POST."})
 
-    print("Generating flashcards...")
+    print("Generating quiz...")
 
     try:
         body = json.loads(request.body)
@@ -55,6 +57,9 @@ def flashcards(request):
     
     url = body.get("url", "").strip()
     print(url)
+    
+    yt = YouTube(url)
+
     pattern = r"(?:v=|\/)([0-9A-Za-z_-]{11})"
     match = re.search(pattern, url)
     if not match:
@@ -62,33 +67,36 @@ def flashcards(request):
 
     video_id = match.group(1)
 
+
     try:
         transcript = YouTubeTranscriptApi().fetch(video_id)
         input_text = " ".join([entry.text for entry in transcript])
     except Exception as e:
         return JsonResponse({"data": "Error."})
 
-    # Prepare conversation for flashcards
-    conversation_flashcards = [
+    # Prepare conversation for quiz
+    conversation_quiz = [
     {
         "role": "system",
         "content": (
-            "You are an expert at transforming video transcripts into educational flashcards.\n\n"
-            "From the provided transcript, extract important concepts, facts, or explanations and turn them into clear, concise Q&A flashcards.\n\n"
-            "Each flashcard MUST begin with 'Question:' followed by a single line question, and then 'Answer:' followed by a single line answer.\n"
+            "You are an expert at transforming video transcripts into educational quizzes.\n\n"
+            "From the provided transcript, extract important concepts, facts, or explanations and turn them into clear, concise Q&A quiz items.\n\n"
+            "Each quiz item MUST begin with 'Question:' followed by a single-line question, and then 'Answer:' followed by a single-line correct answer.\n"
             "Do NOT abbreviate these labels (i.e., do not use 'Q:' or 'A:').\n\n"
             "**Important:** If the transcript already contains text like 'Q:', 'A:', 'Question:', or 'Answer:', REMOVE those prefixes and reformat cleanly.\n\n"
-            "Focus on creating meaningful, informative flashcards that cover key points, definitions, explanations, and examples from the content.\n"
-            "Avoid summaries or outlines. Only produce flashcards in strict Q&A form."
+            "Focus on creating meaningful, challenging, and informative quiz questions that test understanding of key points, definitions, explanations, and examples.\n"
+            "Avoid summaries or outlines. Only produce quiz questions in strict Q&A form."
         ),
     },
     {"role": "user", "content": input_text},
     ]
 
 
-    processed_flashcards = generate_ai_response(conversation_flashcards)
+    processed_quiz = generate_ai_response(conversation_quiz)
 
-    return JsonResponse({"data": processed_flashcards})
+    save_video_data(video_id, yt.title, summary=None, quiz=processed_quiz)
+
+    return JsonResponse({"quiz": processed_quiz})
 
 def generate_summary(request):
     if request.method != "POST":
@@ -104,6 +112,9 @@ def generate_summary(request):
     
     url = body.get("url", "").strip()
     print(url)
+    yt = YouTube(url)
+
+    
     pattern = r"(?:v=|\/)([0-9A-Za-z_-]{11})"
     match = re.search(pattern, url)
     if not match:
@@ -142,5 +153,35 @@ def generate_summary(request):
     ]
 
     processed_summary = generate_ai_response(conversation_summary)
-    return JsonResponse({"data": processed_summary, "transcript": transcript.to_raw_data()})
+    save_video_data(video_id, yt.title, processed_summary, quiz=None)
+    return JsonResponse({"summary": processed_summary, "transcript": transcript.to_raw_data()})
 
+
+def get_videos(request):
+    videos = Video.objects.all().values()
+    videos_list = list(videos)
+    return JsonResponse({"videos": videos_list})
+
+def save_video_data(video_id, title, summary=None, quiz=None):
+    video, created = Video.objects.get_or_create(
+        video_id=video_id,
+        defaults={"title": title, "summary_text": summary, "quiz_text": quiz}
+    )
+    
+    if not created:
+        updated = False
+        if summary is not None:
+            video.summary_text = summary
+            updated = True
+        if video is not None:
+            video.quiz_text = quiz
+            updated = True
+        if title is not None:
+            video.title = title
+            updated = True
+        
+        if updated:
+            video.save()
+            
+    return video
+        

@@ -76,7 +76,7 @@ export default function Home() {
       const data = await response.data;
 
       console.log(data);
-      setSummary(data.data);
+      setSummary(data.summary);
       setTranscript(data.transcript);
 
       setIsLoading(false);
@@ -106,8 +106,13 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <a href="/flashcards" className="hover:underline">
-              Youtube Flashcard Generator
+            <a href="/quiz" className="hover:underline">
+              Youtube Quiz Generator
+            </a>
+          </li>
+           <li>
+            <a href="/videos" className="hover:underline">
+              Other Video Summaries & Quizzes
             </a>
           </li>
         </ul>
@@ -158,14 +163,14 @@ export default function Home() {
           )}
         </form>
         {summary && (
-          <div className="flex mt-12 gap-8 min-w-[90vw] bg-gray-800 p-8 ">
+          <div className="flex mt-12 gap-8 min-w-[90vw] bg-gray-800 p-8 rounded-lg">
             <div className="flex flex-col w-[40%] max-h-screen gap-8">
               {youtubeUrl && (
                 <iframe
                   src={getEmbedUrl(youtubeUrl)}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  height={1000}
+                  className="h-full rounded-xl"
                 />
               )}
               {transcript && (

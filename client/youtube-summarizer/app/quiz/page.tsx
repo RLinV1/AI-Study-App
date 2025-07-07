@@ -4,8 +4,8 @@ import React, { CSSProperties, useEffect, useState } from "react";
 import { BarLoader, PacmanLoader } from "react-spinners";
 import ReactMarkdown from "react-markdown";
 
-const Flashcards = () => {
-  const [flashcards, setFlashCards] = useState("");
+const Quiz = () => {
+  const [quiz, setQuiz] = useState("");
   const [csrftoken, setCsrfToken] = useState<string | undefined>(undefined);
   const [youtubeUrl, setYoutubeUrl] = useState("");
   const [loading, setIsLoading] = useState(false);
@@ -38,18 +38,18 @@ const Flashcards = () => {
     fetchCsrfToken();
   }, []);
 
-  const fetchFlashcards = async () => {
+  const fetchQuiz = async () => {
     if (!csrftoken) {
       console.error("CSRF token not found. Ensure it is set correctly.");
       return;
     }
-    console.log("fetchFlashcards called");
+    console.log("fetchQuiz called");
 
     setError("");
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "http://localhost:8000/api/flashcards/",
+        "http://localhost:8000/api/quiz/",
         {
           url: youtubeUrl,
         },
@@ -63,7 +63,7 @@ const Flashcards = () => {
       );
       const data = response.data;
       console.log(data);
-      setFlashCards(data.data);
+      setQuiz(data.quiz);
       setIsLoading(false);
     } catch (error) {
       if (error instanceof Error) {
@@ -76,8 +76,8 @@ const Flashcards = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setFlashCards(""); // Clear previous summary
-    fetchFlashcards();
+    setQuiz(""); // Clear previous summary
+    fetchQuiz();
   };
 
   return (
@@ -90,8 +90,13 @@ const Flashcards = () => {
             </a>
           </li>
           <li>
-            <a href="/flashcards" className="hover:underline">
-              Youtube Flashcard Generator
+            <a href="/quiz" className="hover:underline">
+              Youtube Quiz Generator
+            </a>
+          </li>
+          <li>
+            <a href="/videos" className="hover:underline">
+              Other Video Summaries & Quizzes
             </a>
           </li>
         </ul>
@@ -103,10 +108,10 @@ const Flashcards = () => {
           className="flex flex-col justify-center items-center gap-2"
         >
           <h1 className="text-5xl font-bold text-white mb-4">
-            YouTube Flashcard Generator
+            YouTube Quiz Generator
           </h1>
           <div className="text-2xl mb-4">
-            Use AI to generate custom flashcards for YouTube videos in one click
+            Use AI to generate custom quiz for YouTube videos in one click
             for free.
           </div>
           <input
@@ -126,7 +131,7 @@ const Flashcards = () => {
                 aria-label="Loading Bar"
                 data-testid="loader"
               />
-              {loading && <div>Waiting for AI to generate flashcards...</div>}
+              {loading && <div>Waiting for AI to generate quiz...</div>}
               <PacmanLoader color={"white"} loading={loading} />
             </>
           )}
@@ -137,14 +142,14 @@ const Flashcards = () => {
               type="submit"
               className=" bg-blue-500 text-white p-2 rounded cursor-pointer w-full"
             >
-              Generate Flashcards
+              Generate Quiz
             </button>
           )}
         </form>
-        {flashcards && (
-          <div className="p-6 m-8 bg-gray-800 flex flex-col w-full overflow-y-scroll max-h-[70vh]">
-            <div className="text-2xl mb-4">Flashcards: </div>
-            {flashcards.split("\n").map((line, index) => (
+        {quiz && (
+          <div className="p-6 m-8 bg-gray-800 flex flex-col w-full overflow-y-scroll max-h-[80vh] rounded-lg">
+            <div className="text-2xl mb-4">Quiz: </div>
+            {quiz.split("\n").map((line, index) => (
               <div className="mb-2" key={index}>
                 <ReactMarkdown key={index}>{line}</ReactMarkdown>
               </div>
@@ -164,4 +169,4 @@ function getCookie(name: string): string | undefined {
   }
   return undefined;
 }
-export default Flashcards;
+export default Quiz;

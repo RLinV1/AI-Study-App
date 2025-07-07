@@ -73,11 +73,11 @@
         "documentation": {}
     },
     {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.apps",
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -86,6 +86,54 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -127,6 +175,22 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "Video",
+        "importPath": "ai_app.models",
+        "description": "ai_app.models",
+        "isExtraImport": true,
+        "detail": "ai_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "YouTube",
+        "importPath": "pytubefix",
+        "description": "pytubefix",
+        "isExtraImport": true,
+        "detail": "pytubefix",
         "documentation": {}
     },
     {
@@ -437,6 +501,33 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.ai.ai_app.migrations.0001_initial",
+        "description": "backend.ai.ai_app.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Video',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('video_id', models.CharField(max_length=100, unique=True)),",
+        "detail": "backend.ai.ai_app.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.ai.ai_app.migrations.0002_video_title",
+        "description": "backend.ai.ai_app.migrations.0002_video_title",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('ai_app', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='video',\n            name='title',\n            field=models.CharField(default='Untitled Video', max_length=255),\n        ),",
+        "detail": "backend.ai.ai_app.migrations.0002_video_title",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.ai.ai_app.migrations.0003_alter_video_title",
+        "description": "backend.ai.ai_app.migrations.0003_alter_video_title",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('ai_app', '0002_video_title'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='video',\n            name='title',\n            field=models.CharField(blank=True, default='', max_length=255),\n        ),",
+        "detail": "backend.ai.ai_app.migrations.0003_alter_video_title",
+        "documentation": {}
+    },
+    {
         "label": "AiAppConfig",
         "kind": 6,
         "importPath": "backend.ai.ai_app.apps",
@@ -446,11 +537,20 @@
         "documentation": {}
     },
     {
+        "label": "Video",
+        "kind": 6,
+        "importPath": "backend.ai.ai_app.models",
+        "description": "backend.ai.ai_app.models",
+        "peekOfCode": "class Video(models.Model):\n    video_id = models.CharField(max_length=100, unique=True)\n    title = models.CharField(max_length=255, blank=True, default=\"\")\n    summary_text = models.TextField(blank=True, null=True)  \n    quiz_text = models.TextField(blank=True, null=True)     \n    created_at = models.DateTimeField(auto_now_add=True)",
+        "detail": "backend.ai.ai_app.models",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "backend.ai.ai_app.urls",
         "description": "backend.ai.ai_app.urls",
-        "peekOfCode": "urlpatterns = [\n    path('api/summary/', generate_summary),\n    path('api/get-csrf/', get_csrf_token),\n    path('api/flashcards/', flashcards),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('api/summary/', generate_summary),\n    path('api/get-csrf/', get_csrf_token),\n    path('api/quiz/', quiz),\n    path('api/videos/', get_videos)\n]",
         "detail": "backend.ai.ai_app.urls",
         "documentation": {}
     },
@@ -468,16 +568,16 @@
         "kind": 2,
         "importPath": "backend.ai.ai_app.views",
         "description": "backend.ai.ai_app.views",
-        "peekOfCode": "def get_csrf_token(request):\n    return JsonResponse({'message': 'CSRF cookie set'})\ndef flashcards(request):\n    if request.method != \"POST\":\n        return JsonResponse({\"data\": \"Invalid request method. Please use POST.\"})\n    print(\"Generating flashcards...\")\n    try:\n        body = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({\"data\": \"Invalid JSON.\"})",
+        "peekOfCode": "def get_csrf_token(request):\n    return JsonResponse({'message': 'CSRF cookie set'})\ndef quiz(request):\n    if request.method != \"POST\":\n        return JsonResponse({\"data\": \"Invalid request method. Please use POST.\"})\n    print(\"Generating quiz...\")\n    try:\n        body = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({\"data\": \"Invalid JSON.\"})",
         "detail": "backend.ai.ai_app.views",
         "documentation": {}
     },
     {
-        "label": "flashcards",
+        "label": "quiz",
         "kind": 2,
         "importPath": "backend.ai.ai_app.views",
         "description": "backend.ai.ai_app.views",
-        "peekOfCode": "def flashcards(request):\n    if request.method != \"POST\":\n        return JsonResponse({\"data\": \"Invalid request method. Please use POST.\"})\n    print(\"Generating flashcards...\")\n    try:\n        body = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({\"data\": \"Invalid JSON.\"})\n    url = body.get(\"url\", \"\").strip()\n    print(url)",
+        "peekOfCode": "def quiz(request):\n    if request.method != \"POST\":\n        return JsonResponse({\"data\": \"Invalid request method. Please use POST.\"})\n    print(\"Generating quiz...\")\n    try:\n        body = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({\"data\": \"Invalid JSON.\"})\n    url = body.get(\"url\", \"\").strip()\n    print(url)",
         "detail": "backend.ai.ai_app.views",
         "documentation": {}
     },
@@ -487,6 +587,24 @@
         "importPath": "backend.ai.ai_app.views",
         "description": "backend.ai.ai_app.views",
         "peekOfCode": "def generate_summary(request):\n    if request.method != \"POST\":\n        return JsonResponse({\"data\": \"Invalid request method. Please use POST.\"})\n    print(\"Generating summary...\")\n    try:\n        body = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({\"data\": \"Invalid JSON.\"})\n    url = body.get(\"url\", \"\").strip()\n    print(url)",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_videos",
+        "kind": 2,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "def get_videos(request):\n    videos = Video.objects.all().values()\n    videos_list = list(videos)\n    return JsonResponse({\"videos\": videos_list})\ndef save_video_data(video_id, title, summary=None, quiz=None):\n    video, created = Video.objects.get_or_create(\n        video_id=video_id,\n        defaults={\"title\": title, \"summary_text\": summary, \"quiz_text\": quiz}\n    )\n    if not created:",
+        "detail": "backend.ai.ai_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "save_video_data",
+        "kind": 2,
+        "importPath": "backend.ai.ai_app.views",
+        "description": "backend.ai.ai_app.views",
+        "peekOfCode": "def save_video_data(video_id, title, summary=None, quiz=None):\n    video, created = Video.objects.get_or_create(\n        video_id=video_id,\n        defaults={\"title\": title, \"summary_text\": summary, \"quiz_text\": quiz}\n    )\n    if not created:\n        updated = False\n        if summary is not None:\n            video.summary_text = summary\n            updated = True",
         "detail": "backend.ai.ai_app.views",
         "documentation": {}
     },
