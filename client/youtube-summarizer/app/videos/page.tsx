@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { SyncLoader } from "react-spinners";
@@ -35,10 +36,10 @@ const Videos = () => {
     fetchData();
   }, []);
   const fetchVideos = async () => {
-    // if (!csrftoken) {
-    //   console.error("CSRF token not found. Ensure it is set correctly.");
-    //   return;
-    // }
+    if (!csrftoken) {
+      console.error("CSRF token not found. Ensure it is set correctly.");
+      return;
+    }
     console.log("fetchVideos called");
 
     try {
@@ -94,19 +95,19 @@ const Videos = () => {
       <nav className="w-full bg-gray-800 p-4 ">
         <ul className="flex justify-around">
           <li>
-            <a href="/" className="hover:underline">
+            <Link href="/" className="hover:underline">
               Youtube Summarizer
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/quiz" className="hover:underline">
+            <Link href="/quiz" className="hover:underline">
               Youtube Quiz Generator
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/videos" className="hover:underline">
+            <Link href="/videos" className="hover:underline">
               Other Video Summaries & Quizzes
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
