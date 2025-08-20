@@ -4,6 +4,7 @@ import { CSSProperties, useEffect, useState } from "react";
 import axios from "axios";
 import { BarLoader, PacmanLoader } from "react-spinners";
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 
 export default function Home() {
   const getEmbedUrl = (youtubeUrl: string) => {
@@ -101,19 +102,19 @@ export default function Home() {
       <nav className="w-full bg-gray-800 p-4 ">
         <ul className="flex justify-around">
           <li>
-            <a href="/" className="hover:underline">
+            <Link href="/" className="hover:underline">
               Youtube Summarizer
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/quiz" className="hover:underline">
+            <Link href="/quiz" className="hover:underline">
               Youtube Quiz Generator
-            </a>
+            </Link>
           </li>
-           <li>
-            <a href="/videos" className="hover:underline">
+          <li>
+            <Link href="/videos" className="hover:underline">
               Other Video Summaries & Quizzes
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
