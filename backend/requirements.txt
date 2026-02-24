@@ -1,6 +1,6 @@
 # Django backend
 Django>=4.2
-djangorestframework>=3.20
+djangorestframework>=3.19.1
 
 # YouTube transcript + NLP
 torch>=2.1.0
