@@ -3,4 +3,6 @@ torch>=2.1.0
 transformers>=4.35.0
 safetensors>=0.3.2
 youtube-transcript-api>=0.6.0
+pytubefix>=0.1.0       # you use `from pytubefix import YouTube`
+django-cors-headers>=4.2   # required because you have it in INSTALLED_APPS
 regex>=2023.13.0
