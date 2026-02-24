@@ -28,9 +28,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r backend/requirements.txt
 
       # Run Django tests from ai/ folder
       - name: Run Django tests
-        working-directory: ai
+        working-directory: backend/ai
         run: python manage.py test
