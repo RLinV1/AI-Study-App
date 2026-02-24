@@ -15,7 +15,7 @@ jobs:
         python-version: [3.11]
 
     steps:
-      # Checkout repo
+      # Checkout code
       - uses: actions/checkout@v4
 
       # Setup Python
@@ -24,11 +24,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      # Install dependencies from the ai/ folder
+      # Install dependencies from the root requirements.txt
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r ai/requirements.txt
+          pip install -r requirements.txt
 
       # Run Django tests from ai/ folder
       - name: Run Django tests
