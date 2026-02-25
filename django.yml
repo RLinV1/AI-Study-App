@@ -31,7 +31,7 @@ jobs:
           pip install -r backend/requirements.txt
           pip install pytest pytest-django
 
-      # 4️⃣ Run tests from backend/ai folder (where manage.py lives)
+      # 4️⃣ Run tests from backend/ai/ai_app
       - name: Run Django tests
         working-directory: backend/ai
         run: pytest ai_app/tests_ai.py --ds=ai.settings --maxfail=1 --disable-warnings -q
