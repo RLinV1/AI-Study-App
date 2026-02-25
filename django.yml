@@ -33,5 +33,5 @@ jobs:
 
       # 4️⃣ Run tests from backend/ai/ai_app
       - name: Run Django tests
-        working-directory: backend/ai
-        run: pytest ai_app/tests_ai.py --ds=ai.settings --maxfail=1 --disable-warnings -q
+        working-directory: backend
+        run: pytest ai/ai_app/tests_ai.py --ds=ai.settings --maxfail=1 --disable-warnings -v
